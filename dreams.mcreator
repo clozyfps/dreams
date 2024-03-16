@@ -68,6 +68,7 @@
     {
       "name": "PlainOfDreamsBiome",
       "type": "biome",
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plain_of_dreams_biome",
@@ -83,6 +84,7 @@
     {
       "name": "TheWorldOfLight",
       "type": "dimension",
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_world_of_light",
@@ -94,15 +96,69 @@
         ]
       },
       "path": "~/Dimensions"
+    },
+    {
+      "name": "DreamGrassBlock",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dream_grass_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dreams/blockstates/dream_grass_block.json",
+          "src/main/resources/assets/dreams/models/block/dream_grass_block.json",
+          "src/main/resources/assets/dreams/models/item/dream_grass_block.json",
+          "src/main/java/net/mcreator/dreams/block/DreamGrassBlockBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "DreamDirtBlock",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dream_dirt_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dreams/blockstates/dream_dirt_block.json",
+          "src/main/resources/assets/dreams/models/block/dream_dirt_block.json",
+          "src/main/resources/assets/dreams/models/item/dream_dirt_block.json",
+          "src/main/java/net/mcreator/dreams/block/DreamDirtBlockBlock.java"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "DreamStoneBlock",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dream_stone_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/block/DreamStoneBlockBlock.java",
+          "src/main/resources/assets/dreams/models/block/dream_stone_block.json",
+          "src/main/resources/assets/dreams/blockstates/dream_stone_block.json",
+          "src/main/resources/assets/dreams/models/item/dream_stone_block.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.dreams.dream_stone_block": "Dreamstone",
       "item.dreams.bored_item": "Bored Item",
       "biome.dreams.plain_of_dreams_biome": "Plain Of Dreams",
-      "item.dreams.clozy_item": "Clozy Item"
+      "item.dreams.clozy_item": "Clozy Item",
+      "block.dreams.dream_grass_block": "Dream Grass Block",
+      "block.dreams.dream_dirt_block": "Dream Dirt"
     }
   },
   "foldersRoot": {

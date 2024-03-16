@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dreams:block/dirt",
+    "up": "dreams:block/grass_block_top",
+    "north": "dreams:block/grass_block_side_overlay",
+    "east": "dreams:block/grass_block_side_overlay",
+    "south": "dreams:block/grass_block_side_overlay",
+    "west": "dreams:block/grass_block_side_overlay",
+    "particle": "dreams:block/dirt"
+  },
+  "render_type": "solid"
+}

@@ -9,7 +9,7 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.STONE#0"
+      "value": "CUSTOM:DreamStoneBlock"
     },
     "fluidBlock": {
       "value": "Blocks.WATER"

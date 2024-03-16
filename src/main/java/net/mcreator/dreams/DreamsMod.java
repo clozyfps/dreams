@@ -29,7 +29,9 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.dreams.init.DreamsModTabs;
 import net.mcreator.dreams.init.DreamsModItems;
+import net.mcreator.dreams.init.DreamsModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -49,7 +51,11 @@ public class DreamsMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+		DreamsModBlocks.REGISTRY.register(bus);
+
 		DreamsModItems.REGISTRY.register(bus);
+
+		DreamsModTabs.REGISTRY.register(bus);
 
 	}
 

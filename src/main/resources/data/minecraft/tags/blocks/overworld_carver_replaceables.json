@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "minecraft:stone",
-    "minecraft:grass_block",
-    "minecraft:dirt"
+    "dreams:dream_stone_block",
+    "dreams:dream_grass_block",
+    "dreams:dream_dirt_block"
   ]
 }

@@ -1,16 +1,35 @@
 
 package net.mcreator.dreams.entity;
 
-import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.nbt.Tag;
-import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.sounds.SoundEvent;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
 
-import javax.annotation.Nullable;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.PathfinderMob;
+import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.AreaEffectCloud;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.network.protocol.Packet;
+import net.minecraft.network.chat.Component;
+
+import net.mcreator.dreams.procedures.DarkLifeFragmentRightClickedOnEntityProcedure;
+import net.mcreator.dreams.procedures.DarkLifeFragmentOnEntityTickUpdateProcedure;
+import net.mcreator.dreams.init.DreamsModEntities;
 
 public class DarkLifeFragmentEntity extends PathfinderMob {
-
 	public DarkLifeFragmentEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(DreamsModEntities.DARK_LIFE_FRAGMENT.get(), world);
 	}
@@ -20,10 +39,8 @@ public class DarkLifeFragmentEntity extends PathfinderMob {
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-
 		setCustomName(Component.literal("§l§0DARK LIFE FRAGMENT"));
 		setCustomNameVisible(true);
-
 	}
 
 	@Override
@@ -84,23 +101,21 @@ public class DarkLifeFragmentEntity extends PathfinderMob {
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
 		InteractionResult retval = InteractionResult.sidedSuccess(this.level().isClientSide());
-
 		super.mobInteract(sourceentity, hand);
-
 		double x = this.getX();
 		double y = this.getY();
 		double z = this.getZ();
 		Entity entity = this;
 		Level world = this.level();
 
-		DarkLifeFragmentRightClickedOnEntityProcedure.execute();
+		DarkLifeFragmentRightClickedOnEntityProcedure.execute(world, x, y, z, entity);
 		return retval;
 	}
 
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		DarkLifeFragmentOnEntityTickUpdateProcedure.execute();
+		DarkLifeFragmentOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override
@@ -117,7 +132,6 @@ public class DarkLifeFragmentEntity extends PathfinderMob {
 	}
 
 	public static void init() {
-
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
@@ -127,8 +141,6 @@ public class DarkLifeFragmentEntity extends PathfinderMob {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 0);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-
 		return builder;
 	}
-
 }

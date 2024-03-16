@@ -26,6 +26,9 @@ public class DreamsModTabs {
 			tabData.accept(DreamsModBlocks.DREAM_GRASS_BLOCK.get().asItem());
 			tabData.accept(DreamsModBlocks.DREAM_DIRT_BLOCK.get().asItem());
 			tabData.accept(DreamsModBlocks.DREAM_STONE_BLOCK.get().asItem());
+			tabData.accept(DreamsModBlocks.MARE_STONE_BLOCK.get().asItem());
+			tabData.accept(DreamsModBlocks.MARE_DIRT_BLOCK.get().asItem());
+			tabData.accept(DreamsModBlocks.MARE_GRASS_BLOCK.get().asItem());
 		}
 	}
 }

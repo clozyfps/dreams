@@ -2,12 +2,12 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "dirt",
-    "textureTop": "grass_block_top",
-    "textureLeft": "grass_block_side_overlay",
-    "textureFront": "grass_block_side_overlay",
-    "textureRight": "grass_block_side_overlay",
-    "textureBack": "grass_block_side_overlay",
+    "texture": "marestone",
+    "textureTop": "marestone",
+    "textureLeft": "marestone",
+    "textureFront": "marestone",
+    "textureRight": "marestone",
+    "textureBack": "marestone",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Dream Grass Block",
+    "name": "Marestone",
     "specialInformation": {
       "fixedValue": []
     },
@@ -56,7 +56,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "GRASS"
+      "value": "ROCK"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -79,24 +79,24 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
-    "isCustomSoundType": true,
+    "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "STONE"
     },
     "breakSound": {
-      "value": "block.grass.break"
+      "value": ""
     },
     "fallSound": {
-      "value": "block.grass.fall"
+      "value": ""
     },
     "hitSound": {
-      "value": "block.grass.hit"
+      "value": ""
     },
     "placeSound": {
-      "value": "block.grass.place"
+      "value": ""
     },
     "stepSound": {
-      "value": "block.grass.step"
+      "value": ""
     },
     "luminance": 0,
     "unbreakable": false,

@@ -1,6 +1,23 @@
 
 package net.mcreator.dreams.world.dimension;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.client.event.RegisterDimensionSpecialEffectsEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.client.renderer.DimensionSpecialEffects;
+
+import net.mcreator.dreams.procedures.TheWorldOfShadowsPlayerEntersDimensionProcedure;
+
 @Mod.EventBusSubscriber
 public class TheWorldOfShadowsDimension {
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -31,7 +48,7 @@ public class TheWorldOfShadowsDimension {
 		double y = entity.getY();
 		double z = entity.getZ();
 		if (event.getTo() == ResourceKey.create(Registries.DIMENSION, new ResourceLocation("dreams:the_world_of_shadows"))) {
-			TheWorldOfShadowsPlayerEntersDimensionProcedure.execute();
+			TheWorldOfShadowsPlayerEntersDimensionProcedure.execute(world, x, y, z, entity);
 		}
 	}
 }

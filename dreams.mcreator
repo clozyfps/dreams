@@ -68,6 +68,7 @@
     {
       "name": "PlainOfDreamsBiome",
       "type": "biome",
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plain_of_dreams_biome",
@@ -83,6 +84,7 @@
     {
       "name": "TheWorldOfLight",
       "type": "dimension",
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_world_of_light",
@@ -179,6 +181,7 @@
     {
       "name": "DarkLifeFragment",
       "type": "livingentity",
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_life_fragment",
@@ -300,6 +303,7 @@
     {
       "name": "WorldOfShadowsMonsters",
       "type": "tag",
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "world_of_shadows_monsters",
@@ -365,15 +369,160 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "PlayerTick",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/PlayerTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "PlayerSleeps",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_sleeps",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/PlayerSleepsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "FullMoonWarning",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "full_moon_warning",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/FullMoonWarningProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "MareStoneBlock",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mare_stone_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/block/MareStoneBlockBlock.java",
+          "src/main/resources/assets/dreams/models/item/mare_stone_block.json",
+          "src/main/resources/assets/dreams/blockstates/mare_stone_block.json",
+          "src/main/resources/assets/dreams/models/block/mare_stone_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MareDirtBlock",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mare_dirt_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dreams/models/block/mare_dirt_block.json",
+          "src/main/java/net/mcreator/dreams/block/MareDirtBlockBlock.java",
+          "src/main/resources/assets/dreams/blockstates/mare_dirt_block.json",
+          "src/main/resources/assets/dreams/models/item/mare_dirt_block.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MareGrassBlock",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mare_grass_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dreams/models/block/mare_grass_block.json",
+          "src/main/java/net/mcreator/dreams/block/MareGrassBlockBlock.java",
+          "src/main/resources/assets/dreams/models/item/mare_grass_block.json",
+          "src/main/resources/assets/dreams/blockstates/mare_grass_block.json"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "Slept",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "Warning",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.dreams.dream_stone_block": "Dreamstone",
       "item.dreams.bored_item": "Bored Item",
+      "block.dreams.mare_stone_block": "Marestone",
+      "block.dreams.dream_grass_block": "Dream Grass Block",
+      "entity.dreams.dark_life_fragment": "Dark Life Fragment",
+      "block.dreams.mare_grass_block": "Mare Grass Block",
+      "block.dreams.dream_dirt_block": "Dream Dirt",
+      "biome.dreams.forest_of_lost_dreams": "Forest Of Lost Dreams",
       "biome.dreams.plain_of_dreams_biome": "Plain Of Dreams",
-      "item.dreams.clozy_item": "Clozy Item"
+      "item.dreams.clozy_item": "Clozy Item",
+      "block.dreams.mare_dirt_block": "Mare Dirt",
+      "biome.dreams.lake_of_souls": "Lake Of Souls"
     }
   },
   "foldersRoot": {

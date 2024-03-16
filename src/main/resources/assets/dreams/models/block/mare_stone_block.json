@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dreams:block/marestone",
+    "up": "dreams:block/marestone",
+    "north": "dreams:block/marestone",
+    "east": "dreams:block/marestone",
+    "south": "dreams:block/marestone",
+    "west": "dreams:block/marestone",
+    "particle": "dreams:block/marestone"
+  },
+  "render_type": "solid"
+}

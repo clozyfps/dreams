@@ -23,6 +23,9 @@ public class DreamsModItems {
 	public static final RegistryObject<Item> DREAM_GRASS_BLOCK = block(DreamsModBlocks.DREAM_GRASS_BLOCK);
 	public static final RegistryObject<Item> DREAM_DIRT_BLOCK = block(DreamsModBlocks.DREAM_DIRT_BLOCK);
 	public static final RegistryObject<Item> DREAM_STONE_BLOCK = block(DreamsModBlocks.DREAM_STONE_BLOCK);
+	public static final RegistryObject<Item> MARE_STONE_BLOCK = block(DreamsModBlocks.MARE_STONE_BLOCK);
+	public static final RegistryObject<Item> MARE_DIRT_BLOCK = block(DreamsModBlocks.MARE_DIRT_BLOCK);
+	public static final RegistryObject<Item> MARE_GRASS_BLOCK = block(DreamsModBlocks.MARE_GRASS_BLOCK);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

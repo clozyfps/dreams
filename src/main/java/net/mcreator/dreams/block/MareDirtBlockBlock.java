@@ -15,8 +15,8 @@ import net.minecraft.core.BlockPos;
 import java.util.List;
 import java.util.Collections;
 
-public class DreamDirtBlockBlock extends Block {
-	public DreamDirtBlockBlock() {
+public class MareDirtBlockBlock extends Block {
+	public MareDirtBlockBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f));
 	}
 

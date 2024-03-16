@@ -31,6 +31,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.dreams.init.DreamsModTabs;
 import net.mcreator.dreams.init.DreamsModItems;
+import net.mcreator.dreams.init.DreamsModEntities;
 import net.mcreator.dreams.init.DreamsModBlocks;
 
 import java.util.function.Supplier;
@@ -54,6 +55,7 @@ public class DreamsMod {
 		DreamsModBlocks.REGISTRY.register(bus);
 
 		DreamsModItems.REGISTRY.register(bus);
+		DreamsModEntities.REGISTRY.register(bus);
 
 		DreamsModTabs.REGISTRY.register(bus);
 

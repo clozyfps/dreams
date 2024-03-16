@@ -12,7 +12,7 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.dreams.procedures.ClozyProcedureProcedure;
+import net.mcreator.dreams.procedures.ClozyItemRightclickedProcedure;
 
 import java.util.List;
 
@@ -44,7 +44,7 @@ public class ClozyItemItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ClozyProcedureProcedure.execute();
+		ClozyItemRightclickedProcedure.execute(entity);
 		return ar;
 	}
 }

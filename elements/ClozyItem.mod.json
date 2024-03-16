@@ -36,7 +36,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "ClozyProcedure"
+      "name": "ClozyItemRightclicked"
     },
     "enableRanged": false,
     "shootConstantly": false,

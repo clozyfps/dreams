@@ -68,7 +68,6 @@
     {
       "name": "PlainOfDreamsBiome",
       "type": "biome",
-      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plain_of_dreams_biome",
@@ -84,7 +83,6 @@
     {
       "name": "TheWorldOfLight",
       "type": "dimension",
-      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_world_of_light",
@@ -98,18 +96,18 @@
       "path": "~/Dimensions"
     },
     {
-      "name": "DreamGrassBlock",
+      "name": "DreamStoneBlock",
       "type": "block",
-      "sortid": 5,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dream_grass_block",
+      "registry_name": "dream_stone_block",
       "metadata": {
         "files": [
-          "src/main/resources/assets/dreams/blockstates/dream_grass_block.json",
-          "src/main/resources/assets/dreams/models/block/dream_grass_block.json",
-          "src/main/resources/assets/dreams/models/item/dream_grass_block.json",
-          "src/main/java/net/mcreator/dreams/block/DreamGrassBlockBlock.java"
+          "src/main/java/net/mcreator/dreams/block/DreamStoneBlockBlock.java",
+          "src/main/resources/assets/dreams/models/block/dream_stone_block.json",
+          "src/main/resources/assets/dreams/blockstates/dream_stone_block.json",
+          "src/main/resources/assets/dreams/models/item/dream_stone_block.json"
         ]
       },
       "path": "~/Blocks"
@@ -132,73 +130,257 @@
       "path": "~/Blocks"
     },
     {
-      "name": "DreamStoneBlock",
+      "name": "DreamGrassBlock",
       "type": "block",
-      "sortid": 9,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "dream_stone_block",
+      "registry_name": "dream_grass_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dreams/block/DreamStoneBlockBlock.java",
-          "src/main/resources/assets/dreams/models/block/dream_stone_block.json",
-          "src/main/resources/assets/dreams/blockstates/dream_stone_block.json",
-          "src/main/resources/assets/dreams/models/item/dream_stone_block.json"
+          "src/main/resources/assets/dreams/blockstates/dream_grass_block.json",
+          "src/main/resources/assets/dreams/models/block/dream_grass_block.json",
+          "src/main/resources/assets/dreams/models/item/dream_grass_block.json",
+          "src/main/java/net/mcreator/dreams/block/DreamGrassBlockBlock.java"
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "LakeOfSouls",
+      "type": "biome",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lake_of_souls",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dreams/worldgen/biome/lake_of_souls.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "TheWorldOfShadows",
+      "type": "dimension",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_world_of_shadows",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dreams/dimension/the_world_of_shadows.json",
+          "src/main/java/net/mcreator/dreams/world/dimension/TheWorldOfShadowsDimension.java",
+          "src/main/resources/data/dreams/dimension_type/the_world_of_shadows.json"
+        ]
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "DarkLifeFragment",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_life_fragment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/entity/DarkLifeFragmentEntity.java",
+          "src/main/java/net/mcreator/dreams/client/renderer/DarkLifeFragmentRenderer.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "DarkLifeFragmentOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_life_fragment_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/DarkLifeFragmentOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "TheWorldOfShadowsPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_world_of_shadows_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/TheWorldOfShadowsPlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dimensions/Procedures"
+    },
+    {
+      "name": "ForestOfLostDreams",
+      "type": "biome",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forest_of_lost_dreams",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dreams/worldgen/biome/forest_of_lost_dreams.json",
+          "src/main/resources/data/dreams/worldgen/configured_feature/forest_of_lost_dreams_tree.json",
+          "src/main/java/net/mcreator/dreams/world/features/treedecorators/ForestOfLostDreamsFruitDecorator.java",
+          "src/main/resources/data/dreams/worldgen/placed_feature/forest_of_lost_dreams_tree.json",
+          "src/main/java/net/mcreator/dreams/world/features/treedecorators/ForestOfLostDreamsLeaveDecorator.java",
+          "src/main/java/net/mcreator/dreams/world/features/treedecorators/ForestOfLostDreamsTrunkDecorator.java"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "ClozyItemRightclicked",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clozy_item_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/ClozyItemRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "WorldOfShadowsMonsters",
+      "type": "tag",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "world_of_shadows_monsters",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dreams/tags/entity_types/world_of_shadows_monsters.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "DarkLifeFragmentRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_life_fragment_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/DarkLifeFragmentRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "DimensionRestriction",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dimension_restriction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/DimensionRestrictionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.dreams.dream_stone_block": "Dreamstone",
       "item.dreams.bored_item": "Bored Item",
       "biome.dreams.plain_of_dreams_biome": "Plain Of Dreams",
-      "item.dreams.clozy_item": "Clozy Item",
-      "block.dreams.dream_grass_block": "Dream Grass Block",
-      "block.dreams.dream_dirt_block": "Dream Dirt"
+      "item.dreams.clozy_item": "Clozy Item"
     }
   },
   "foldersRoot": {
     "name": "~",
     "children": [
       {
-        "name": "Procedures",
-        "children": []
-      },
-      {
-        "name": "Mobs",
-        "children": []
-      },
-      {
-        "name": "Potions",
-        "children": []
-      },
-      {
-        "name": "Keybinds",
-        "children": []
-      },
-      {
-        "name": "Items",
-        "children": [
-          {
-            "name": "Procedures",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Weapons",
-        "children": []
-      },
-      {
-        "name": "Biomes",
-        "children": []
-      },
-      {
-        "name": "Dimensions",
+        "name": "Armor",
         "children": []
       },
       {
@@ -206,11 +388,11 @@
         "children": []
       },
       {
-        "name": "Commands",
+        "name": "Procedures",
         "children": []
       },
       {
-        "name": "Particles",
+        "name": "Blocks",
         "children": []
       },
       {
@@ -222,11 +404,33 @@
         "children": []
       },
       {
-        "name": "Blocks",
+        "name": "GUI",
         "children": []
       },
       {
-        "name": "Creative Tabs",
+        "name": "Weapons",
+        "children": []
+      },
+      {
+        "name": "Dimensions",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Items",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Biomes",
         "children": []
       },
       {
@@ -234,11 +438,32 @@
         "children": []
       },
       {
-        "name": "GUI",
+        "name": "Creative Tabs",
         "children": []
       },
       {
-        "name": "Armor",
+        "name": "Particles",
+        "children": []
+      },
+      {
+        "name": "Mobs",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Potions",
+        "children": []
+      },
+      {
+        "name": "Keybinds",
+        "children": []
+      },
+      {
+        "name": "Commands",
         "children": []
       }
     ]

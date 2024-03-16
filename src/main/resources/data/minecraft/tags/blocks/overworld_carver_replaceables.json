@@ -3,6 +3,9 @@
   "values": [
     "dreams:dream_stone_block",
     "dreams:dream_grass_block",
-    "dreams:dream_dirt_block"
+    "dreams:dream_dirt_block",
+    "minecraft:blackstone",
+    "minecraft:grass_block",
+    "minecraft:water"
   ]
 }

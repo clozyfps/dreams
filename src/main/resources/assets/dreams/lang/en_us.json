@@ -1,8 +1,5 @@
 {
-  "block.dreams.dream_stone_block": "Dreamstone",
   "item.dreams.bored_item": "Bored Item",
   "biome.dreams.plain_of_dreams_biome": "Plain Of Dreams",
-  "item.dreams.clozy_item": "Clozy Item",
-  "block.dreams.dream_grass_block": "Dream Grass Block",
-  "block.dreams.dream_dirt_block": "Dream Dirt"
+  "item.dreams.clozy_item": "Clozy Item"
 }

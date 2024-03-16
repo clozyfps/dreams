@@ -15,20 +15,19 @@
       "path": "~/Biomes"
     },
     {
-      "name": "ForestOfLostDreams",
-      "type": "biome",
-      "sortid": 1,
+      "name": "TheWorldOfShadows",
+      "type": "dimension",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "forest_of_lost_dreams",
+      "registry_name": "the_world_of_shadows",
       "metadata": {
         "files": [
-          "src/main/resources/data/dreams/worldgen/placed_feature/forest_of_lost_dreams_tree.json",
-          "src/main/resources/data/dreams/worldgen/configured_feature/forest_of_lost_dreams_tree.json",
-          "src/main/resources/data/dreams/worldgen/biome/forest_of_lost_dreams.json"
+          "src/main/java/net/mcreator/dreams/world/dimension/TheWorldOfShadowsDimension.java",
+          "src/main/resources/data/dreams/dimension_type/the_world_of_shadows.json",
+          "src/main/resources/data/dreams/dimension/the_world_of_shadows.json"
         ]
       },
-      "path": "~/Biomes"
+      "path": "~/Dimensions"
     },
     {
       "name": "TheWorldOfShadowsPlayerEntersDimension",
@@ -66,34 +65,189 @@
       "path": "~/Dimensions/Procedures"
     },
     {
-      "name": "TheWorldOfShadows",
+      "name": "ForestOfLostDreams",
+      "type": "biome",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forest_of_lost_dreams",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dreams/worldgen/placed_feature/forest_of_lost_dreams_tree.json",
+          "src/main/resources/data/dreams/worldgen/configured_feature/forest_of_lost_dreams_tree.json",
+          "src/main/resources/data/dreams/worldgen/biome/forest_of_lost_dreams.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "BoredProcedure",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bored_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/BoredProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "TheWorldOfLight",
       "type": "dimension",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "the_world_of_shadows",
+      "registry_name": "the_world_of_light",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/dreams/world/dimension/TheWorldOfShadowsDimension.java",
-          "src/main/resources/data/dreams/dimension_type/the_world_of_shadows.json",
-          "src/main/resources/data/dreams/dimension/the_world_of_shadows.json"
+          "src/main/java/net/mcreator/dreams/world/dimension/TheWorldOfLightDimension.java",
+          "src/main/resources/data/dreams/dimension/the_world_of_light.json",
+          "src/main/resources/data/dreams/dimension_type/the_world_of_light.json"
         ]
       },
       "path": "~/Dimensions"
+    },
+    {
+      "name": "ClozyProcedure",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clozy_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/ClozyProcedureProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "PlainOfDreamsBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plain_of_dreams_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dreams/worldgen/biome/plain_of_dreams_biome.json",
+          "src/main/resources/data/dreams/worldgen/configured_feature/plain_of_dreams_biome_tree.json",
+          "src/main/resources/data/dreams/worldgen/placed_feature/plain_of_dreams_biome_tree.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "BoredItem",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bored_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/item/BoredItemItem.java",
+          "src/main/resources/assets/dreams/models/item/bored_item.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ClozyItem",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clozy_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/dreams/models/item/clozy_item.json",
+          "src/main/java/net/mcreator/dreams/item/ClozyItemItem.java"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {
-      "biome.dreams.forest_of_lost_dreams": "Forest Of Lost Dreams",
-      "biome.dreams.lake_of_souls": "Lake Of Souls"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",
     "children": [
       {
+        "name": "Armor",
+        "children": []
+      },
+      {
+        "name": "Gamerules",
+        "children": []
+      },
+      {
         "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Tags",
+        "children": []
+      },
+      {
+        "name": "Damage Sources",
+        "children": []
+      },
+      {
+        "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Weapons",
+        "children": []
+      },
+      {
+        "name": "Dimensions",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Items",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Biomes",
+        "children": []
+      },
+      {
+        "name": "Overlays",
+        "children": []
+      },
+      {
+        "name": "Creative Tabs",
+        "children": []
+      },
+      {
+        "name": "Particles",
         "children": []
       },
       {
@@ -109,64 +263,7 @@
         "children": []
       },
       {
-        "name": "Items",
-        "children": []
-      },
-      {
-        "name": "Weapons",
-        "children": []
-      },
-      {
-        "name": "Biomes",
-        "children": []
-      },
-      {
-        "name": "Dimensions",
-        "children": [
-          {
-            "name": "Procedures",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Gamerules",
-        "children": []
-      },
-      {
         "name": "Commands",
-        "children": []
-      },
-      {
-        "name": "Particles",
-        "children": []
-      },
-      {
-        "name": "Tags",
-        "children": []
-      },
-      {
-        "name": "Damage Sources",
-        "children": []
-      },
-      {
-        "name": "Blocks",
-        "children": []
-      },
-      {
-        "name": "Creative Tabs",
-        "children": []
-      },
-      {
-        "name": "Overlays",
-        "children": []
-      },
-      {
-        "name": "GUI",
-        "children": []
-      },
-      {
-        "name": "Armor",
         "children": []
       }
     ]

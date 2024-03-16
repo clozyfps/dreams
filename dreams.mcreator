@@ -56,9 +56,44 @@
         "files": [
           "src/main/java/net/mcreator/dreams/procedures/BoredProcedureProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Items/Procedures"
+    },
+    {
+      "name": "PlainOfDreamsBiome",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plain_of_dreams_biome",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dreams/worldgen/biome/plain_of_dreams_biome.json",
+          "src/main/resources/data/dreams/worldgen/placed_feature/plain_of_dreams_biome_tree.json",
+          "src/main/resources/data/dreams/worldgen/configured_feature/plain_of_dreams_biome_tree.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "TheWorldOfLight",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_world_of_light",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/world/dimension/TheWorldOfLightDimension.java",
+          "src/main/resources/data/dreams/dimension/the_world_of_light.json",
+          "src/main/resources/data/dreams/dimension_type/the_world_of_light.json"
+        ]
+      },
+      "path": "~/Dimensions"
     }
   ],
   "variable_elements": [],
@@ -66,6 +101,7 @@
   "language_map": {
     "en_us": {
       "item.dreams.bored_item": "Bored Item",
+      "biome.dreams.plain_of_dreams_biome": "Plain Of Dreams",
       "item.dreams.clozy_item": "Clozy Item"
     }
   },

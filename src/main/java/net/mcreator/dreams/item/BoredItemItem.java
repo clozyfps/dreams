@@ -44,7 +44,7 @@ public class BoredItemItem extends Item {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		BoredProcedureProcedure.execute();
+		BoredProcedureProcedure.execute(entity);
 		return ar;
 	}
 }

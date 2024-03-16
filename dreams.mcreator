@@ -1,9 +1,93 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "LakeOfSouls",
+      "type": "biome",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lake_of_souls",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dreams/worldgen/biome/lake_of_souls.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "ForestOfLostDreams",
+      "type": "biome",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "forest_of_lost_dreams",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dreams/worldgen/placed_feature/forest_of_lost_dreams_tree.json",
+          "src/main/resources/data/dreams/worldgen/configured_feature/forest_of_lost_dreams_tree.json",
+          "src/main/resources/data/dreams/worldgen/biome/forest_of_lost_dreams.json"
+        ]
+      },
+      "path": "~/Biomes"
+    },
+    {
+      "name": "TheWorldOfShadowsPlayerEntersDimension",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_world_of_shadows_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/TheWorldOfShadowsPlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dimensions/Procedures"
+    },
+    {
+      "name": "TheWorldOfShadows",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_world_of_shadows",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/world/dimension/TheWorldOfShadowsDimension.java",
+          "src/main/resources/data/dreams/dimension_type/the_world_of_shadows.json",
+          "src/main/resources/data/dreams/dimension/the_world_of_shadows.json"
+        ]
+      },
+      "path": "~/Dimensions"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "biome.dreams.forest_of_lost_dreams": "Forest Of Lost Dreams",
+      "biome.dreams.lake_of_souls": "Lake Of Souls"
+    }
   },
   "foldersRoot": {
     "name": "~",
@@ -38,7 +122,12 @@
       },
       {
         "name": "Dimensions",
-        "children": []
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Gamerules",

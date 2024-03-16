@@ -1,9 +1,73 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "ClozyItem",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clozy_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/item/ClozyItemItem.java",
+          "src/main/resources/assets/dreams/models/item/clozy_item.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "BoredItem",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bored_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/item/BoredItemItem.java",
+          "src/main/resources/assets/dreams/models/item/bored_item.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "ClozyProcedure",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clozy_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/ClozyProcedureProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "BoredProcedure",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bored_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/BoredProcedureProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Items/Procedures"
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.dreams.bored_item": "Bored Item",
+      "item.dreams.clozy_item": "Clozy Item"
+    }
   },
   "foldersRoot": {
     "name": "~",
@@ -26,7 +90,12 @@
       },
       {
         "name": "Items",
-        "children": []
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Weapons",

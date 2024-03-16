@@ -30,6 +30,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.dreams.init.DreamsModItems;
+import net.mcreator.dreams.init.DreamsModEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -50,6 +51,7 @@ public class DreamsMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		DreamsModItems.REGISTRY.register(bus);
+		DreamsModEntities.REGISTRY.register(bus);
 
 	}
 

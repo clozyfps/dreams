@@ -1,1 +1,8 @@
-{}
+{
+  "item.dreams.bored_item": "Bored Item",
+  "biome.dreams.plain_of_dreams_biome": "Plain Of Dreams",
+  "item.dreams.clozy_item": "Clozy Item",
+  "entity.dreams.dark_life_fragment": "Dark Life Fragment",
+  "biome.dreams.forest_of_lost_dreams": "Forest Of Lost Dreams",
+  "biome.dreams.lake_of_souls": "Lake Of Souls"
+}

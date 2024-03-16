@@ -7,19 +7,32 @@
       "options": {
         "type": "soul"
       },
-      "probability": 0.0005
+      "probability": 0.001
     },
-    "foliage_color": -16777216,
-    "grass_color": -16777216,
-    "sky_color": -16777216,
-    "fog_color": -16777216,
-    "water_color": -16777216,
-    "water_fog_color": -16777216
+    "foliage_color": -15132391,
+    "grass_color": -15132391,
+    "sky_color": -15132391,
+    "fog_color": -15132391,
+    "water_color": -15132391,
+    "water_fog_color": -15132391
   },
   "spawners": {
     "monster": [],
     "creature": [],
-    "ambient": [],
+    "ambient": [
+      {
+        "type": "wither_skeleton",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 3
+      },
+      {
+        "type": "dreams:dark_life_fragment",
+        "weight": 1,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ],
     "axolotls": [],
     "underground_water_creature": [],
     "water_creature": [],

@@ -17,6 +17,7 @@
     {
       "name": "TheWorldOfShadows",
       "type": "dimension",
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_world_of_shadows",
@@ -32,6 +33,7 @@
     {
       "name": "TheWorldOfShadowsPlayerEntersDimension",
       "type": "procedure",
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_world_of_shadows_player_enters_dimension",
@@ -75,7 +77,10 @@
         "files": [
           "src/main/resources/data/dreams/worldgen/placed_feature/forest_of_lost_dreams_tree.json",
           "src/main/resources/data/dreams/worldgen/configured_feature/forest_of_lost_dreams_tree.json",
-          "src/main/resources/data/dreams/worldgen/biome/forest_of_lost_dreams.json"
+          "src/main/java/net/mcreator/dreams/world/features/treedecorators/ForestOfLostDreamsFruitDecorator.java",
+          "src/main/resources/data/dreams/worldgen/biome/forest_of_lost_dreams.json",
+          "src/main/java/net/mcreator/dreams/world/features/treedecorators/ForestOfLostDreamsLeaveDecorator.java",
+          "src/main/java/net/mcreator/dreams/world/features/treedecorators/ForestOfLostDreamsTrunkDecorator.java"
         ]
       },
       "path": "~/Biomes"
@@ -103,6 +108,7 @@
     {
       "name": "TheWorldOfLight",
       "type": "dimension",
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "the_world_of_light",
@@ -133,6 +139,7 @@
     {
       "name": "PlainOfDreamsBiome",
       "type": "biome",
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plain_of_dreams_biome",
@@ -174,12 +181,154 @@
         ]
       },
       "path": "~/Items"
+    },
+    {
+      "name": "ClozyItemRightclicked",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clozy_item_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/ClozyItemRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Procedures"
+    },
+    {
+      "name": "WorldOfShadowsMonsters",
+      "type": "tag",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "world_of_shadows_monsters",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/dreams/tags/entity_types/world_of_shadows_monsters.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "DimensionRestriction",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dimension_restriction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/DimensionRestrictionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "DarkLifeFragment",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_life_fragment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/client/renderer/DarkLifeFragmentRenderer.java",
+          "src/main/java/net/mcreator/dreams/entity/DarkLifeFragmentEntity.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "DarkLifeFragmentOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_life_fragment_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/DarkLifeFragmentOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
+    },
+    {
+      "name": "DarkLifeFragmentRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_life_fragment_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/dreams/procedures/DarkLifeFragmentRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mobs/Procedures"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.dreams.bored_item": "Bored Item",
+      "biome.dreams.plain_of_dreams_biome": "Plain Of Dreams",
+      "item.dreams.clozy_item": "Clozy Item",
+      "entity.dreams.dark_life_fragment": "Dark Life Fragment",
+      "biome.dreams.forest_of_lost_dreams": "Forest Of Lost Dreams",
+      "biome.dreams.lake_of_souls": "Lake Of Souls"
+    }
   },
   "foldersRoot": {
     "name": "~",
@@ -252,7 +401,12 @@
       },
       {
         "name": "Mobs",
-        "children": []
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Potions",

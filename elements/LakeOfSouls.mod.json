@@ -13,23 +13,23 @@
       "value": "Blocks.BLACKSTONE"
     },
     "airColor": {
-      "value": -16777216,
+      "value": -15066598,
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -16777216,
+      "value": -15132391,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -16777216,
+      "value": -15132391,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -16777216,
+      "value": -15132391,
       "falpha": 0.0
     },
     "waterFogColor": {
-      "value": -16777216,
+      "value": -15132391,
       "falpha": 0.0
     },
     "ambientSound": {

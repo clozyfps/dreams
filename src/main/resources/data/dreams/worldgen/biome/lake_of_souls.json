@@ -9,12 +9,12 @@
       },
       "probability": 0.001
     },
-    "foliage_color": -16777216,
-    "grass_color": -16777216,
-    "sky_color": -16777216,
-    "fog_color": -16777216,
-    "water_color": -16777216,
-    "water_fog_color": -16777216
+    "foliage_color": -15132391,
+    "grass_color": -15132391,
+    "sky_color": -15066598,
+    "fog_color": -15066598,
+    "water_color": -15132391,
+    "water_fog_color": -15132391
   },
   "spawners": {
     "monster": [],

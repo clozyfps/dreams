@@ -13,23 +13,23 @@
       "value": "Blocks.GRAVEL"
     },
     "airColor": {
-      "value": -16777216,
+      "value": -15132391,
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -16777216,
+      "value": -15132391,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -16777216,
+      "value": -15132391,
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -16777216,
+      "value": -15132391,
       "falpha": 0.0
     },
     "waterFogColor": {
-      "value": -16777216,
+      "value": -15132391,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -49,7 +49,7 @@
     "particleToSpawn": {
       "value": "SOUL"
     },
-    "particlesProbability": 0.05,
+    "particlesProbability": 0.1,
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "spawnBiome": false,
@@ -76,20 +76,20 @@
       "max": 1.0
     },
     "treesPerChunk": 15,
-    "vanillaTreeType": "Big trees",
-    "treeType": 0,
-    "minHeight": 7,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 10,
     "treeStem": {
-      "value": ""
+      "value": "Blocks.LOG2#1"
     },
     "treeBranch": {
-      "value": ""
+      "value": "Blocks.LEAVES#0"
     },
     "treeVines": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "treeFruits": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "defaultFeatures": [
       "Caves",
@@ -115,6 +115,25 @@
     "spawnBastionRemnant": false,
     "spawnEndCity": false,
     "spawnRuinedPortal": "NONE",
-    "spawnEntries": []
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityWitherSkeleton"
+        },
+        "minGroup": 1,
+        "maxGroup": 3,
+        "weight": 5,
+        "spawnType": "ambient"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:DarkLifeFragment"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 1,
+        "spawnType": "ambient"
+      }
+    ]
   }
 }

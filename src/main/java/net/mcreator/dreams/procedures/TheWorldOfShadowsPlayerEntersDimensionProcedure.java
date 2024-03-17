@@ -29,7 +29,7 @@ public class TheWorldOfShadowsPlayerEntersDimensionProcedure {
 				_player.displayClientMessage(Component.literal("\u00A7This Place is..."), true);
 			DreamsMod.queueServerWork(25, () -> {
 				if (entity instanceof Player _player && !_player.level().isClientSide())
-					_player.displayClientMessage(Component.literal("\u00A70Disturbing."), true);
+					_player.displayClientMessage(Component.literal("\u00A70disturbing."), true);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave")), SoundSource.NEUTRAL, 1, 1);

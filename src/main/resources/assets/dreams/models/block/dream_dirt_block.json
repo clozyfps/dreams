@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dreams:block/dirt",
+    "up": "dreams:block/dirt",
+    "north": "dreams:block/dirt",
+    "east": "dreams:block/dirt",
+    "south": "dreams:block/dirt",
+    "west": "dreams:block/dirt",
+    "particle": "dreams:block/dirt"
+  },
+  "render_type": "solid"
+}

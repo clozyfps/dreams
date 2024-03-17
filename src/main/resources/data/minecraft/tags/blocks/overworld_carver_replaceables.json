@@ -1,10 +1,12 @@
 {
   "replace": false,
   "values": [
+    "dreams:dream_stone_block",
+    "dreams:dream_grass_block",
+    "dreams:dream_dirt_block",
     "minecraft:blackstone",
-    "minecraft:grass_block",
-    "minecraft:water",
-    "minecraft:stone",
-    "minecraft:dirt"
+    "dreams:mare_grass_block",
+    "dreams:mare_dirt_block",
+    "minecraft:water"
   ]
 }

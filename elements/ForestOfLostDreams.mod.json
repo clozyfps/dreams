@@ -4,10 +4,10 @@
   "definition": {
     "name": "Forest Of Lost Dreams",
     "groundBlock": {
-      "value": "Blocks.GRASS"
+      "value": "CUSTOM:MareGrassBlock"
     },
     "undergroundBlock": {
-      "value": "Blocks.BLACKSTONE"
+      "value": "CUSTOM:MareDirtBlock"
     },
     "underwaterBlock": {
       "value": "Blocks.GRAVEL"

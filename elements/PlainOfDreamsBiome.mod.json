@@ -4,13 +4,13 @@
   "definition": {
     "name": "Plain Of Dreams",
     "groundBlock": {
-      "value": "Blocks.GRASS"
+      "value": "CUSTOM:DreamGrassBlock"
     },
     "undergroundBlock": {
-      "value": "Blocks.DIRT#0"
+      "value": "CUSTOM:DreamDirtBlock"
     },
     "underwaterBlock": {
-      "value": "Blocks.DIRT#0"
+      "value": "CUSTOM:DreamDirtBlock"
     },
     "airColor": {
       "value": -26164,

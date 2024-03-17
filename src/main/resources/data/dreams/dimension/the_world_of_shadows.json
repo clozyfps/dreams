@@ -459,10 +459,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:grass_block",
-                              "Properties": {
-                                "snowy": "false"
-                              }
+                              "Name": "dreams:mare_grass_block"
                             }
                           }
                         },
@@ -487,7 +484,7 @@
                     "then_run": {
                       "type": "minecraft:block",
                       "result_state": {
-                        "Name": "minecraft:blackstone"
+                        "Name": "dreams:mare_dirt_block"
                       }
                     }
                   }

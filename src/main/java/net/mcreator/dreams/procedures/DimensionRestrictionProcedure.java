@@ -30,7 +30,7 @@ public class DimensionRestrictionProcedure {
 		if (entity == null)
 			return;
 		if ((entity.level().dimension()) == (ResourceKey.create(Registries.DIMENSION, new ResourceLocation("dreams:the_world_of_shadows")))) {
-			if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("world_of_shadows_monsters"))) || !(entity instanceof Player || entity instanceof ServerPlayer)) {
+			if (!entity.getType().is(TagKey.create(Registries.ENTITY_TYPE, new ResourceLocation("world_of_shadows_monsters"))) && !(entity instanceof Player || entity instanceof ServerPlayer)) {
 				if (!entity.level().isClientSide())
 					entity.discard();
 			}
